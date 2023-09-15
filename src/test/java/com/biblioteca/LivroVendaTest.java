@@ -28,64 +28,65 @@ public class LivroVendaTest {
 
     }
 
-     @Test
-     public void testConstrutorPadrao() {
-         LivroVenda livroVenda = new LivroVenda();
-         Assert.assertNull(livroVenda.livroDoEstoque);
-         Assert.assertNull(livroVenda.quantidade);
-     }
-
-    // @Test
-    // public void testIncremento1() {
-        
-    //     LivroEstoque livroEstoque = new LivroEstoque();
-    //     int quantidade = 10;
-    //     LivroVenda livroVenda = new LivroVenda(livroEstoque,quantidade);
-    //     livroVenda.IncrementarQuantidade();
-    //     int expected = 11;   
-
-    //     Assert.assertEquals(expected, livroVenda.quantidade);
+    //  @Test
+    //  public void testConstrutorPadrao() {
+    //      LivroVenda livroVenda = new LivroVenda();
+    //      Assert.assertNull(livroVenda.livroDoEstoque);
+    //      Assert.assertNull(livroVenda.quantidade);
+         
     //  }
+
+    @Test
+    public void testIncremento1() {
+        
+        LivroEstoque livroEstoque = new LivroEstoque();
+        int quantidade = 10;
+        LivroVenda livroVenda = new LivroVenda(livroEstoque,quantidade);
+        livroVenda.IncrementarQuantidade();
+        int expected = 11;   
+
+        Assert.assertEquals(expected, livroVenda.quantidade);
+     }
      
-//  @Test
-//     public void testIncremento2() {
+ @Test
+    public void testIncremento2() {
         
-//         LivroEstoque livroEstoque = new LivroEstoque();
-//         int quantidade = 10;
-//         LivroVenda livroVenda = new LivroVenda(livroEstoque,quantidade);
-//         livroVenda.IncrementarQuantidade(10);
-//         int expected = 20;   
+        LivroEstoque livroEstoque = new LivroEstoque();
+        int quantidade = 10;
+        LivroVenda livroVenda = new LivroVenda(livroEstoque,quantidade);
+        livroVenda.IncrementarQuantidade(10);
+        int expected = 20;   
 
-//         Assert.assertEquals(expected, livroVenda.quantidade);
-//     }
-//      @Test
-//     public void testIncremento3() {
+        Assert.assertEquals(expected, livroVenda.quantidade);
+    }
+     @Test
+    public void testIncremento3() {
         
-//         LivroEstoque livroEstoque = new LivroEstoque();
-//         int quantidade = 10;
-//         LivroVenda livroVenda = new LivroVenda(livroEstoque,quantidade);
-//         boolean retorno = livroVenda.DecrementarQuantidade();
+        LivroEstoque livroEstoque = new LivroEstoque();
+        int quantidade = 10;
+        LivroVenda livroVenda = new LivroVenda(livroEstoque,quantidade);
+        boolean retorno = livroVenda.DecrementarQuantidade();
 
-//         int expected = 9;   
+        int expected = 9;   
 
-//         Assert.assertEquals(true, retorno);
-//         Assert.assertEquals(expected, livroVenda.quantidade);
+        Assert.assertEquals(true, retorno);
+        Assert.assertEquals(expected, livroVenda.quantidade);
 
-//     }
-//       @Test
-//     public void testIncremento4() {
+    }
+      @Test
+    public void testIncremento4() {
         
-//         LivroEstoque livroEstoque = new LivroEstoque();
-//         int quantidade = 10;
-//         LivroVenda livroVenda = new LivroVenda(livroEstoque,quantidade);
-//         boolean retorno = livroVenda.DecrementarQuantidade(5);
+        LivroEstoque livroEstoque = new LivroEstoque();
+        int quantidade = 10;
+        LivroVenda livroVenda = new LivroVenda(livroEstoque,quantidade);
+        boolean retorno = livroVenda.DecrementarQuantidade(5);
 
-//         int expected = 5;   
+        int expected = 5;   
 
-//         Assert.assertEquals(true, retorno);
-//         Assert.assertEquals(expected, livroVenda.quantidade);
+        Assert.assertEquals(true, retorno);
+        Assert.assertEquals(expected, livroVenda.quantidade);
 
-//     }
+    }
 
 
 }
