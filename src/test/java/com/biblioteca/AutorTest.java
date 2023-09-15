@@ -12,7 +12,7 @@ public class AutorTest {
          */
         @Test
         public void testConstrutorComParametros() {
-                String nome = "João";
+                String nome = null;
                 String sobrenome = "Silva";
                 Autor autor = new Autor(nome, sobrenome);
                 Assert.assertNotNull(autor.nome);
