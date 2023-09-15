@@ -32,7 +32,7 @@ public class LivroVendaTest {
      public void testConstrutorPadrao() {
          LivroVenda livroVenda = new LivroVenda();
          Assert.assertNull(livroVenda.livroDoEstoque);
-         Assert.assertNull(livroVenda.quantidade);
+         Assert.assertEquals(0,livroVenda.quantidade);
          
      }
 
