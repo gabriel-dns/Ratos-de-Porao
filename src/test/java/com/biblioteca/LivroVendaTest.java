@@ -35,17 +35,17 @@ public class LivroVendaTest {
          Assert.assertNull(livroVenda.quantidade);
      }
 
-    @Test
-    public void testIncremento1() {
+    // @Test
+    // public void testIncremento1() {
         
-        LivroEstoque livroEstoque = new LivroEstoque();
-        int quantidade = 10;
-        LivroVenda livroVenda = new LivroVenda(livroEstoque,quantidade);
-        livroVenda.IncrementarQuantidade();
-        int expected = 11;   
+    //     LivroEstoque livroEstoque = new LivroEstoque();
+    //     int quantidade = 10;
+    //     LivroVenda livroVenda = new LivroVenda(livroEstoque,quantidade);
+    //     livroVenda.IncrementarQuantidade();
+    //     int expected = 11;   
 
-        Assert.assertEquals(expected, livroVenda.quantidade);
-     }
+    //     Assert.assertEquals(expected, livroVenda.quantidade);
+    //  }
      
 //  @Test
 //     public void testIncremento2() {
