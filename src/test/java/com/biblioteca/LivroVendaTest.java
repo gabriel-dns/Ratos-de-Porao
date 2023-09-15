@@ -28,13 +28,13 @@ public class LivroVendaTest {
 
     }
 
-    //  @Test
-    //  public void testConstrutorPadrao() {
-    //      LivroVenda livroVenda = new LivroVenda();
-    //      Assert.assertNull(livroVenda.livroDoEstoque);
-    //      Assert.assertNull(livroVenda.quantidade);
+     @Test
+     public void testConstrutorPadrao() {
+         LivroVenda livroVenda = new LivroVenda();
+         Assert.assertNull(livroVenda.livroDoEstoque);
+         Assert.assertNull(livroVenda.quantidade);
          
-    //  }
+     }
 
     @Test
     public void testIncremento1() {
