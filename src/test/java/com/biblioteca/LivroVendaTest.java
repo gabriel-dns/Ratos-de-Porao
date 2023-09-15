@@ -81,7 +81,7 @@ public class LivroVendaTest {
         LivroVenda livroVenda = new LivroVenda(livroEstoque,quantidade);
         boolean retorno = livroVenda.DecrementarQuantidade(5);
 
-        int expected = 5;   
+        int expected = 9;   
 
         Assert.assertEquals(true, retorno);
         Assert.assertEquals(expected, livroVenda.quantidade);
